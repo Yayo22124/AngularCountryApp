@@ -1,0 +1,28 @@
+<h2>Países</h2>
+<hr>
+<ul class="list-group">
+  <button
+    routerLink="countries/by-capital"
+    [routerLinkActiveOptions]="{exact: true}"
+    routerLinkActive="active"
+    class="list-group-item list-group-item-action"
+  >
+    Por Capital
+  </button>
+  <button
+    routerLink="countries/by-country"
+    [routerLinkActiveOptions]="{exact: true}"
+    routerLinkActive="active"
+    class="list-group-item list-group-item-action"
+  >
+    Por País
+  </button>
+  <button
+    routerLink="countries/by-region"
+    [routerLinkActiveOptions]="{exact: true}"
+    routerLinkActive="active"
+    class="list-group-item list-group-item-action"
+  >
+    Por Región
+  </button>
+</ul>

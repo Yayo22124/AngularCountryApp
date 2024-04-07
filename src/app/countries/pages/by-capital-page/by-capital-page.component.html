@@ -1,0 +1,15 @@
+<ca-shared-loader *ngIf="isLoading"/>
+<h2>Por Capital</h2>
+<hr>
+<div class="row mb-5">
+  <div class="col">
+    <!-- SearchBox -->
+    <ca-shared-search-box [initial-value]="searchTerm" placeholder="Buscar por capital" (on-value)="searchByCapital($event)"/>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <!-- Results Table -->
+    <ca-countries-table [countries]="countries"/>
+  </div>
+</div>
